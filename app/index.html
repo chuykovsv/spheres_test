@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='ru'>
+	<head>
+		<title>TEST</title>
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0' />
+		<link rel='icon' href='#' />
+		<link rel='stylesheet' href='style.css' />
+		<script src='scripts/app.js'></script>
+	</head>
+	<body>
+		<script>
+			window.app = new appLibrary.App();
+			console.log('Camera control:\n\tRotate - mousemove\n\tMove   - [W S A D Q E]\n\nUpdate mesh:\n\t1) update file "./assets/spheres.json"\n\t2) call "app.update" method');
+			console.log('For example:\napp.update({\n\tresolution: 128,\n\tsphere1: [2, 14, 0, 10],\n\tsphere2: [0, 6, 3, 10]\n});');
+		</script>
+		<table>
+			<tr>
+				<td>Triangles:</td>
+				<td id='triangles'>0</td>
+			</tr>
+			<tr>
+				<td>Vertices:</td>
+				<td id='vertices'>0</td>
+			</tr>
+			<tr>
+				<td>Indices:</td>
+				<td id='indices'>0</td>
+			</tr>
+	</body>
+</html>

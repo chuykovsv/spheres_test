@@ -1,0 +1,122 @@
+{
+  "extends": [
+      "airbnb-base",
+      "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "env": {
+      "jest": true,
+      "browser": true,
+      "commonjs": true
+  },
+  "rules": {
+      "indent": ["error", 4, { "SwitchCase": 1 }],
+      "comma-dangle": [1, "never"],
+      "func-names": 0,
+      "strict": 1,
+      "new-cap": [2, { "newIsCap": true }],
+      "prefer-destructuring": "off",
+      "import/no-extraneous-dependencies": 0,
+      "no-underscore-dangle": 0,
+      "no-restricted-syntax": 0,
+      "no-plusplus": 0,
+      "no-mixed-operators": 0,
+      "no-lonely-if": 0,
+      "no-continue": 0,
+      "no-multi-spaces": 0,
+      "no-await-in-loop": 0,
+      "spaced-comment": 0,
+      "no-undef": 2,
+      "consistent-return": 0,
+      "id-length": 0,
+      "object-curly-spacing": ["error", "always"],
+      "object-curly-newline": 0,
+      "max-len": 0,
+      "space-before-function-paren": [2, {
+          "anonymous": "never",
+          "named": "never",
+          "asyncArrow": "always"
+      }],
+      "no-param-reassign": [2, {"props": false}],
+      "arrow-body-style": 0,
+      "prefer-template": 0,
+      "import/prefer-default-export": 0,
+      "class-methods-use-this": 0,
+      "no-restricted-properties": 0,
+      "quote-props": 0,
+      "react/prop-types": 0,
+      "no-loop-func": 0,
+      "no-console": "warn",
+      "no-confusing-arrow": ["error", {"allowParens": true}],
+      "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+      "dot-notation": "off",
+      "arrow-parens": 0,
+      "no-bitwise": 0,
+      "@typescript-eslint/explicit-function-return-type": ["error", {
+          "allowExpressions": true,
+          "allowTypedFunctionExpressions": true
+      }],
+      "@typescript-eslint/naming-convention": [
+          "error",
+          {
+              "selector": "memberLike",
+              "modifiers": ["private"],
+              "format": null,
+              "leadingUnderscore": "require"
+          },
+          {
+              "selector": "memberLike",
+              "modifiers": ["protected"],
+              "format": null,
+              "leadingUnderscore": "require"
+          }
+      ],
+      "@typescript-eslint/ban-ts-comment": "warn",
+      "@typescript-eslint/camelcase": "off",
+      "@typescript-eslint/no-var-requires": "off",
+      "@typescript-eslint/no-non-null-assertion": "warn",
+      "@typescript-eslint/no-inferrable-types": "off",
+      "@typescript-eslint/member-delimiter-style": "error",
+      "no-useless-constructor": "off",
+      "no-dupe-class-members": "off",
+      "max-classes-per-file": "off",
+      "import/extensions": "off",
+      "import/no-unresolved": "off",
+      "curly": ["error", "all"]
+  },
+  "settings": {
+      "import/resolver": {
+          "node": {
+              "extensions": [".ts", ".tsx"]
+          }
+      }
+  },
+  "overrides": [
+      {
+        "files": "**/*.js",
+        "rules": {
+          "@typescript-eslint/no-useless-constructor": "off",
+          "@typescript-eslint/explicit-function-return-type": "off",
+          "@typescript-eslint/no-unused-vars": "off",
+          "@typescript-eslint/camelcase": "off",
+          "@typescript-eslint/naming-convention": "off",
+          "@typescript-eslint/no-explicit-any": "off",
+          "@typescript-eslint/no-empty-function": "off",
+          "@typescript-eslint/explicit-module-boundary-types": "off"
+        }
+      },
+      {
+        "files": "**/*.ts",
+        "rules": {
+            "no-unused-vars": "off",
+            "no-dupe-class-members": "off",
+            "no-useless-constructor": "off"
+        }
+      }
+  ]
+}

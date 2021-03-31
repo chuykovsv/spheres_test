@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "ES2020",
+    "lib": [
+      "ES2019",
+      "DOM"
+    ],
+    "allowJs": true,
+    "downlevelIteration": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": false,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "rootDirs": ["./src"],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "removeComments": true,
+    "declaration": true,
+    "newLine": "lf"
+  }
+}
