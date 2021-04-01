@@ -107,5 +107,12 @@ export class App {
             ...createMesh(json)
         };
         this._mesh = new Renderable(options);
+
+        /* Set UI data */
+        this._ui.set(
+            options.indexData.length / 3,
+            options.vertexData.length / 6,
+            options.indexData.length
+        );
     }
 }
